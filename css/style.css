@@ -1,0 +1,101 @@
+/*
+Colors used:
+(Black): #000000;
+(Light grey): #F0F1EE;
+(white): #FFFFFF
+(yellow-green): #C1C01D
+(cherry red):#DC2742
+*/
+
+body {
+  background-color: #ffffff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px; /* Sets the font size to 14px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #000000;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-family: 'Montserrat+Subrayada', sans-serif; /* h1 should be a different font alltogether, but this font is not being displayed properly? */
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 300;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 300;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: #0771D0;
+  text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+  color: #ff7f50;
+}
+
+a:hover,
+a:focus {
+  color: #DC2742;
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:active { /* selected link */
+  color: #994c30;
+}
+
+.button {
+  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: #000000;
+  color: #ffffff !important; /* needed to override the default link color */
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #C1C01D; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+.button:active { /* how do I see this in the browser? */
+  opacity: 0.8;
+  text-decoration: none;
+  }
+
+.button.contact { /* not working-only added this to index footer */
+  background-color: transparent;
+  color: #ff7f50 !important;
+  text-transform: uppercase;
+  border: 2px solid #ff7f50;
+  }
+
+.button.contact:hover { /* not working */
+  background-color: #ff7f50;
+  color: #ffffff !important;
+}
+
+.button.contact:active { /* not working */
+  opacity: 0.8;
+  text-decoration: none;
+  }
