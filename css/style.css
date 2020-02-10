@@ -9,7 +9,7 @@ Colors used:
 
 body {
   background-color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 14px; /* Sets the font size to 14px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
@@ -20,7 +20,7 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 h1 {
-  font-family: 'Montserrat+Subrayada', sans-serif; /* h1 should be a different font alltogether, but this font is not being displayed properly? */
+  font-family: 'Comfortaa', sans-serif; /* h1 should be a different font alltogether, but this font is not being displayed properly? */
   font-size: 2.75em;
   font-weight: 700;
 }
@@ -45,17 +45,17 @@ img {
 
 a {
   color: #0771D0;
-  text-decoration: none; /* No underlining */
+  text-decoration: underline; /* No underlining */
 }
 
 a:visited { /* visited link */
-  color: #ff7f50;
+  color: #0771D0;
 }
 
 a:hover,
 a:focus {
   color: #DC2742;
-  text-decoration: underline; /* Underlining when hovering over a link */
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
 a:active { /* selected link */
@@ -71,6 +71,7 @@ a:active { /* selected link */
   border-radius: 3px;
   border-bottom: 2px solid #C1C01D; /* width of the border, type, color */
   transition: 0.2s opacity;
+  text-decoration: none;
 }
 
 .button:hover {
